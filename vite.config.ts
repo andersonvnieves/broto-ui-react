@@ -1,7 +1,9 @@
 /// <reference types="vitest/config" />
+import { join, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-
+import tailwindcss from '@tailwindcss/vite';
+import { peerDependencies } from './package.json';
 // https://vite.dev/config/
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,7 +12,21 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
+  build: {
+    target: 'esnext',
+    minify: false,
+    lib: {
+      entry: resolve(__dirname, join('src', 'index.ts')),
+      fileName: 'index',
+      cssFileName: 'style',
+      formats: ['es', 'cjs'],
+    },
+    rollupOptions: {
+      // Exclude peer dependencies from the bundle to reduce bundle size
+      external: ['react/jsx-runtime', ...Object.keys(peerDependencies)],
+    },
+  },
   test: {
     projects: [{
       extends: true,

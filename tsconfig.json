@@ -5,7 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "lib": ["DOM", "ES2022", "DOM.Iterable"],
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "ESNext",

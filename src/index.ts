@@ -1,2 +1,3 @@
-// src/index.ts
-export { Button } from "./components/Button";
+import './components/global.css';
+
+export { Button } from "./components/Button/Button";
