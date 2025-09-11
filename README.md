@@ -17,4 +17,11 @@ Install broto-ui-react package with npm:
 ```
 
 
-    
+    Este projeto é licenciado sob a GNU General Public License v3.0 (GPL-3.0).
+Consulte o arquivo LICENSE
+para mais detalhes.
+
+Créditos de terceiros
+
+Este projeto utiliza ícones do Lucide Icons
+, licenciados sob a MIT License:

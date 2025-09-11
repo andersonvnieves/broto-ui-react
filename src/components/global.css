@@ -1,1 +1,100 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("../assets/fonts/RobotoMono-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    /* === Fonts === */
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "Roboto Mono", ui-monospace, monospace;
+
+    /* === Text === */
+    --color-text-primary: #1f1f1f;
+    --color-text-secondary: #858585;
+    --color-text-muted: #9a9a9a;
+    --color-text-disabled: #d0d0d0;
+    --color-text-inverted: #4b5563;
+
+    /* === Background and Surfaces === */
+    --color-surface-base: #fafafa;
+    --color-surface-higher: #f6f6f6;
+    --color-surface-higher-alt: #f2f2f2;
+    --color-surface-border: #e2e2e0;
+    --color-surface-active: #e7e7e7;
+    --color-surface-highlight: #f1f1f1;
+
+    /* === Primary === */
+    --color-primary-base: #F38109;
+    --color-primary-hover: #F9C28A;
+    --color-primary-active: #E59C60;
+    --color-primary-inactive: #FABF80;
+    --color-primary-border: #FCEBDD;
+    --color-primary-bg: #FFF7F0;
+
+    /* === Secondary === */
+    --color-secondary-base: #fafafa;
+    --color-secondary-hover: #e2e8f0;
+    --color-secondary-active: #E5E7EB;
+    --color-secondary-inactive: #F5F5F5;
+    --color-secondary-border: #e2e8f0;
+    --color-secondary-bg: #FFFFFF;
+
+    /* === Charts === */
+    --color-chart-1: #2563eb;
+    --color-chart-2: #16a34a;
+    --color-chart-3: #f97316;
+    --color-chart-4: #dc2626;
+    --color-chart-5: #9333ea;
+    --color-chart-6: #0891b2;
+
+    /* === Semantic: Success === */
+    --color-success-base: #22c55e;
+    --color-success-hover: #16a34a;
+    --color-success-active: #15803d;
+    --color-success-inactive: #86efac;
+    --color-success-border: #bbf7d0;
+    --color-success-bg: #dcfce7;
+
+    /* === Semantic: Warning === */
+    --color-warning-base: #f97316;
+    --color-warning-hover: #fb923c;
+    --color-warning-active: #b45309;
+    --color-warning-inactive: #fbbf24;
+    --color-warning-border: #fed7aa;
+    --color-warning-bg: #fff7ed;
+
+    /* === Semantic: Info === */
+    --color-info-base: #3b82f6;
+    --color-info-hover: #2563eb;
+    --color-info-active: #1d4ed8;
+    --color-info-inactive: #93c5fd;
+    --color-info-border: #bfdbfe;
+    --color-info-bg: #dbeafe;
+
+    /* === Semantic: Error === */
+    --color-error-base: #ef4444;
+    --color-error-hover: #dc2626;
+    --color-error-active: #b91c1c;
+    --color-error-inactive: #fca5a5;
+    --color-error-border: #fecaca;
+    --color-error-bg: #fef2f2;
+}
+
+body {
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    color: var(--color-text-primary);
+}
+
