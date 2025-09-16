@@ -27,6 +27,14 @@ export const Primary: Story = {
   },
 };
 
+export const Disabled: Story = {
+  args: {
+    variant: 'primary',
+    label: 'Button',
+    disabled: true
+  },
+};
+
 export const Secondary: Story = {
   args: {
     variant: 'secondary',

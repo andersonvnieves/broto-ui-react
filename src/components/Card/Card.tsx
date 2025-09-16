@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 
-const button = cva(
+const card = cva(
     "font-sans rounded-md font-medium transition-colors border",
     {
         variants: {
@@ -21,21 +21,21 @@ const button = cva(
     }
 );
 
-export interface ButtonProps
-    extends VariantProps<typeof button> {
+export interface CardProps
+    extends VariantProps<typeof card> {
     label: string;
     onClick?: () => void;
 }
 
-export const Button = ({ label, variant, size, onClick, ...props }: ButtonProps) => {
-  return (
-    <button
-      type="button"
-      className={button({ variant, size })}
-      onClick={onClick}
-      {...props}
-    >
-      {label}
-    </button>
-  );
+export const Card = ({ label, variant, size, onClick, ...props }: CardProps) => {
+    return (
+        <div className={'bg-surface-light rounded-[15px] p-[3px]'}>
+            <div className={`bg-surface-highlight p-[12px] rounded-[12px] min-w-[200px] min-h-[150px] border border-surface-border `}>
+
+            </div>
+            <div className={'px-[6px] py-[6px]'}>
+
+            </div>
+        </div>
+    );
 };

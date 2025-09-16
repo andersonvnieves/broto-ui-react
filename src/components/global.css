@@ -30,11 +30,13 @@
 
     /* === Background and Surfaces === */
     --color-surface-base: #fafafa;
+    --color-surface-base-light: #F9FAFB;
     --color-surface-higher: #f6f6f6;
-    --color-surface-higher-alt: #f2f2f2;
-    --color-surface-border: #e2e2e0;
+    --color-surface-light: #F3F4F6;
+    --color-surface-border: #E2E8F0;
     --color-surface-active: #e7e7e7;
-    --color-surface-highlight: #f1f1f1;
+    --color-surface-highlight: #FAFAFA;
+    --color-surface-highlight-light: #F1F1F1;
 
     /* === Primary === */
     --color-primary-base: #F38109;
