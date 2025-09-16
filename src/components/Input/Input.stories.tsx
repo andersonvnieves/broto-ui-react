@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Badge } from './Badge';
+import { Input } from './Input';
 
 const meta = {
-  title: "DataDisplay/Badge",
-  component: Badge,
+  title: "Form/Input",
+  component: Input,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Badge>;
+} satisfies Meta<typeof Input>;
 
 export default meta;
 
@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: "Success",
-    variant: "success"
+    placeholder: "placeholder"
   }
 };

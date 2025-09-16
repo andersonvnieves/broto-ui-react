@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Panel } from './Panel';
 
 const meta = {
+  title: "Surfaces/Panel",
   component: Panel,
   parameters: {
     layout: 'centered',

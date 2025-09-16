@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Surface } from './Surface';
 
 const meta = {
+  title: "Surfaces/Surface",
   component: Surface,
   parameters: {
     layout: 'centered',
